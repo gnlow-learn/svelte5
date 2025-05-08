@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "deno.window",
+      "dom"
+    ]
+  },
+  "imports": {
+    "svelte": "npm:svelte@^5.25.6"
+  },
+  "lock": false
+}
