@@ -1,4 +1,4 @@
-import { mount } from "https://esm.sh/svelte@5.25.6"
+import { mount } from "https://esm.sh/svelte@5.38.2"
 
 import App from "./src/App.svelte"
 
