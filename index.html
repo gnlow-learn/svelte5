@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <script type="module" src="./index.ts"></script>
+    <script type="module">
+        import { mount } from "https://esm.sh/svelte@5.38.2"
+
+        import App from "./src/index.svelte"
+
+        mount(App, { target: document.body })
+    </script>
 </body>
 </html>
