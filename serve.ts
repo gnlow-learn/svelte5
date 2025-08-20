@@ -33,4 +33,4 @@ app.use("/**/*.svelte", serveStatic({
     root: "./",
 }))
 
-Deno.serve(app.fetch)
+export default { fetch: app.fetch }

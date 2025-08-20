@@ -5,5 +5,5 @@ deno install
 ```
 - serve
 ```sh
-deno run -A serve.ts
+deno serve -A serve.ts
 ```
