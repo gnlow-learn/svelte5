@@ -3,7 +3,7 @@ import {
     handleTsLike,
 } from "https://deno.land/x/tserve@0.1.7/mod.ts"
 
-import { compile } from "https://esm.sh/svelte@5.38.2/compiler"
+import { compile } from "svelte/compiler"
 
 new Tserve([
     handleTsLike(
