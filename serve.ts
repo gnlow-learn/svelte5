@@ -17,7 +17,20 @@ const svelte = createMiddleware(async (c, next) => {
 
 const app = new Hono()
 
+const html = await Deno.readTextFile("index.html")
+
+app.get("/", async c => c.html(html))
+
+app.get("/:page", async c => c.html(
+    html.replace(
+        `"./src/index.svelte"`,
+        `"./src/${c.req.param("page")}.svelte"`,
+    )
+))
+
 app.use("/**/*.svelte", svelte)
-app.use("/**/*", serveStatic({ root: "./" }))
+app.use("/**/*.svelte", serveStatic({
+    root: "./",
+}))
 
 Deno.serve(app.fetch)
