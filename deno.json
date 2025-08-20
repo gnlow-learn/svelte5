@@ -5,5 +5,9 @@
       "dom"
     ]
   },
-  "lock": false
+  "lock": false,
+  "imports": {
+    "svelte": "npm:svelte@^5.38.2"
+  },
+  "nodeModulesDir": "auto"
 }

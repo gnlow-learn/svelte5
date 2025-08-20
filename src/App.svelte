@@ -6,6 +6,6 @@
     }
 </script>
 
-<button on:click={incr}>
+<button onclick={incr}>
     Clicked {count} times
 </button>
