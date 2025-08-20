@@ -1,7 +1,11 @@
 <script lang="ts">
-    const greet = () => {
-        console.log("Hello, World!")
+    let count = $state(0)
+    
+    const incr = () => {
+        console.log(count++)
     }
 </script>
 
-<button on:click={greet}>Click me</button>
+<button on:click={incr}>
+    Clicked {count} times
+</button>
