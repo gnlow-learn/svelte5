@@ -4,4 +4,4 @@
     }
 </script>
 
-<button onclick={greet}>Click me</button>
+<button on:click={greet}>Click me</button>
