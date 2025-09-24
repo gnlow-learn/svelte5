@@ -1,9 +1,9 @@
 # svelte5
 - `svelte-vscode` breaks without `node_modules` (thanks i hate it)
 ```sh
-deno install
+deno i
 ```
 - serve
 ```sh
-deno serve -A serve.ts
+deno run -A npm:vite
 ```
