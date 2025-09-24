@@ -9,5 +9,10 @@
   "imports": {
     "svelte": "npm:svelte@^5.38.2"
   },
-  "nodeModulesDir": "auto"
+  "nodeModulesDir": "auto",
+  "lint": {
+    "rules": {
+      "exclude": ["no-import-prefix"]
+    }
+  }
 }
