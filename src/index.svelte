@@ -6,6 +6,6 @@
     }
 </script>
 
-<button onclick={incr}>
+<button class="p(10) m(10) r(10) bg(#ccc)" onclick={incr}>
     Clicked {count} times
 </button>
